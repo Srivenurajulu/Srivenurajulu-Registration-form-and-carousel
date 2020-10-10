@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <center>
+
+  <div class="row">
+    <section class="section">
+             <header>
+             <h3>Registration Form</h3>
+             <h4>Please fill your personal information in this form</h4>
+             </header>
+    <main>
+      <form>
+            <div class="form-item box-item">
+               <input type="text" name="name" class="tx1" placeholder="Name" data-required>
+               <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+            </div>
+
+            <div class="form-item box-item">
+               <input type="email" name="email" class="tx1" placeholder="Email" data-email data-required>
+               <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+               <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>  
+            </div>
+
+        <div class="form-item box-item">
+            <div class="form-item-triple">
+              <div class="radio-label"> 
+                <label class="label">Gender</label>
+              </div>
+
+              <div class="form-item"> 
+               <input id="Male" type="radio" name="gender" value="Male" data-once>
+               <label for="Male">Male</label>
+              </div>
+
+               <div class="form-item"> 
+                <input id="Female" type="radio" name="gender" value="Female" data-once>
+                <label for="Female">Female</label>
+              </div>
+           </div>
+          <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+        </div>
+        
+        
+          <div>
+            <tr>
+              <td align="left" valign="top" width="41%">Date of Birth</td>
+              <td  width="57%"><input type="date" value="" name="DOB" size="24" align="right"></td>
+              <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+              <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+            </tr>  
+          </div>
+          
+        
+        <div class="form-item-double box-item">
+          
+          <div class="form-item">
+            <input type="text" name="Age" placeholder="Age" data-required data-number>
+            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+            <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number from 0-150</small>
+          </div>
+        </div>
+
+        <div class="form-item box-item">
+          <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+          <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+          <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+        </div>
+
+        <div class="form-item">
+          <span id="submit" class="submit">Submit</span>
+        </div>
+
+      </form>
+
+
+
+      
+    </main>
+
+    <footer>
+      <p>Already have an account? <a href="#">Login</a></p>
+    </footer>
+
+    <i class="wave"></i>
+  </div>
+  </section>
+
+  
+
+  <br /><br />
+  
+  <br /><br />
+
+
+
+  <section>
+
+  
+	<div class="container">
+
+		<div class="carousel slide" id="main-carousel" data-ride="carousel">
+
+			<ol class="carousel-indicators">
+				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#main-carousel" data-slide-to="1"></li>
+				<li data-target="#main-carousel" data-slide-to="2"></li>
+				<li data-target="#main-carousel" data-slide-to="3"></li>
+			</ol><!-- /.carousel-indicators -->
+			
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<img class="d-block img-fluid" src="https://s19.postimg.cc/qzj5uncgj/slide1.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+            <h3>Mountain in Alaska</h3>
+            <p>Landscapes on Denali highway.</p>
+          </div>
+        </div>
+        
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="https://s19.postimg.cc/lmubh3h0j/slide2.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Mountain in Siberia</h3>
+						<p>Lake Cicely Altai.</p>
+          </div>
+        </div>
+        
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="https://s19.postimg.cc/99hh9lr5v/slide3.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Mountain in Switzerland</h3>
+						<p>Majestic morning view of Stellisee lake with Matterhorn peak on background.</p>
+					</div>
+        </div>
+        
+				<div class="carousel-item">
+					<img src="https://s19.postimg.cc/nenabzsnn/slide4.jpg" alt="" class="d-block img-fluid">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Mountain in Morocco </h3>
+						<p>Road in Atlas Mountain.</p>
+					</div>
+        </div>
+			</div><!-- /.carousel-inner -->
+			
+			<a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only" aria-hidden="true">Prev</span>
+      </a>
+      
+			<a href="#main-carousel" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only" aria-hidden="true">Next</span>
+      </a>
+      
+		</div><!-- /.carousel -->
+  </div><!-- /.container -->
+
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  
+
+    <script  src="function.js"></script>
+  </center>
+  <footer>
+    <p class="footer-company-about">
+
+  <b>
+    <h1>Designed And Developed By</h1>
+  </b>
+
+  <b>
+    <h2>Srivenurajulu G</h2>
+  </b>
+
+  <b>
+    <h2>BE Computer Science Engineering</h2>
+  </b>
+
+  <b> 
+    <h2>Sri Venkateswara College Of Engineering Chennai</h2>  
+  </b>
+
+    </p>
+  </footer>
+</body>
+
+</html>
